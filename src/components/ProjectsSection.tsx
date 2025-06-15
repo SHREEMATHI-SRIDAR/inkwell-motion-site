@@ -34,11 +34,11 @@ const ProjectsSection = () => {
       live: 'https://example.com'
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: 'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop',
-      tech: ['React', 'TypeScript', 'Socket.io', 'PostgreSQL'],
-      github: 'https://github.com',
+      title: 'Finance Management platform',
+      description: 'A collaborative Finance Management platform with real-time updates, drag-and-drop functionality, and team collaboration features.',
+      image: 'public/image.png',
+      tech: ['Angular', 'TypeScript', 'MongoDB', 'Node.Js'],
+      github: 'https://github.com/SHREEMATHI-SRIDAR/FinanceManagement',
       live: 'https://example.com'
     },
     {

@@ -27,7 +27,7 @@ const HeroSection = () => {
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             <span className="block">Hello, I'm</span>
             <span className="block bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-              Your Name
+              Shreemathi S
             </span>
           </h1>
           

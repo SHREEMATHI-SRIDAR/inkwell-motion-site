@@ -23,12 +23,12 @@ const AboutSection = () => {
   }, []);
 
   const skills = [
-    { name: 'React', level: 90 },
-    { name: 'TypeScript', level: 85 },
-    { name: 'Node.js', level: 80 },
-    { name: 'Python', level: 75 },
-    { name: 'UI/UX Design', level: 70 },
-    { name: 'Database Design', level: 80 },
+    { name: 'MEAN', level: 80 },
+    { name: 'MERN', level: 80 },
+    { name: 'JAVA', level: 80 },
+    { name: 'MYSQL', level: 90 },
+    { name: 'CYBER SECURITY', level: 70 },
+    
   ];
 
   return (
@@ -54,16 +54,13 @@ const AboutSection = () => {
               Passionate Developer with a Creative Edge
             </h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              I'm a full-stack developer with over 5 years of experience creating digital experiences 
-              that combine beautiful design with robust functionality. My passion lies in solving 
-              complex problems through clean, efficient code and intuitive user interfaces.
+              I’m a passionate Computer Science graduate with a solid foundation in software development, algorithms, and analytical problem-solving. I thrive in dynamic environments where innovation meets impact.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
-              projects, or sharing my knowledge through tech blogs and mentoring.
+With hands-on experience in building scalable solutions and a strong drive to continuously learn and adapt, I aim to contribute meaningfully to forward-thinking teams. I'm eager to apply my technical expertise to real-world challenges and grow as a well-rounded technology professional in today’s ever-evolving industry.
             </p>
             <div className="flex flex-wrap gap-3">
-              {['React', 'TypeScript', 'Node.js', 'Python', 'AWS', 'Docker'].map((tech, index) => (
+              {['MEAN', 'MERN', 'JAVA', 'CYBERSECURITY'].map((tech, index) => (
                 <span
                   key={tech}
                   className={`px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium transition-all duration-300 delay-${index * 100} ${

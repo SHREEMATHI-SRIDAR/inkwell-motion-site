@@ -58,7 +58,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email',
-      content: 'your.email@example.com',
+      content: 'tsridar4_bcs26@mepcoeng.ac.in',
       link: 'mailto:your.email@example.com'
     },
     {
@@ -70,7 +70,7 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: 'Location',
-      content: 'San Francisco, CA',
+      content: 'Dindigul',
       link: '#'
     }
   ];
@@ -129,7 +129,7 @@ const ContactSection = () => {
                 <CardContent>
                   <div className="flex space-x-4">
                     <a
-                      href="https://github.com"
+                      href="https://github.com/SHREEMATHI-SRIDAR"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-3 bg-gray-100 rounded-lg hover:bg-blue-100 hover:text-blue-600 transition-all duration-300 hover:scale-110"
@@ -137,7 +137,7 @@ const ContactSection = () => {
                       <Github size={20} />
                     </a>
                     <a
-                      href="https://linkedin.com"
+                      href="https://www.linkedin.com/in/shreemathi-s-23b512355/"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="p-3 bg-gray-100 rounded-lg hover:bg-blue-100 hover:text-blue-600 transition-all duration-300 hover:scale-110"
