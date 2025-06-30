@@ -1,5 +1,5 @@
-
 import { useEffect, useRef, useState } from 'react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const AboutSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,8 +28,50 @@ const AboutSection = () => {
     { name: 'JAVA', level: 80 },
     { name: 'MYSQL', level: 90 },
     { name: 'CYBER SECURITY', level: 70 },
-    
   ];
+
+  const [activeCategory, setActiveCategory] = useState('NPTEL');
+
+  const certificates = {
+    NPTEL: [
+      {
+        title: 'Data Mining',
+        image: '../public/certificates/Data Mining.pdf',
+      },
+      {
+        title: 'Google Cloud Computing Foundations',
+        image: '../public/certificates/Google Cloud Computing Foundations.pdf',
+      },
+      {
+        title: 'Social Network Analysis',
+        image: '../public/certificates/Social Network Analysis.pdf',
+      },
+    ],
+    Workshops: [
+      {
+        title: 'AI Intensified Scientific Accelerated Computing',
+        image: '/certificates/5-DAY WORKSHOP.png',
+      },
+      {
+        title: 'Cloud Computing Symposium',
+        image: '/certificates/symposium-cloud.png',
+      },
+    ],
+    International_Certification: [
+      {
+        title: 'Java Certified Foundations Associate',
+        image: '../public/certificates/Oracle certification.pdf',
+      },
+    ],
+    Others: [
+      {
+        title: 'Pragati: Path to Future - INFOSYS',
+        image: '/certificates/PRAGTHI PATH TO SUCCESS.pdf',
+      },
+    ],
+  };
+
+  const categories = ['NPTEL', 'Workshops', 'International_Certification', 'Others'];
 
   return (
     <section id="about" ref={sectionRef} className="py-20 bg-gray-50">
@@ -46,7 +88,6 @@ const AboutSection = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Content */}
           <div className={`transition-all duration-1000 delay-300 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
           }`}>
@@ -57,7 +98,7 @@ const AboutSection = () => {
               I’m a passionate Computer Science graduate with a solid foundation in software development, algorithms, and analytical problem-solving. I thrive in dynamic environments where innovation meets impact.
             </p>
             <p className="text-gray-600 mb-6 leading-relaxed">
-With hands-on experience in building scalable solutions and a strong drive to continuously learn and adapt, I aim to contribute meaningfully to forward-thinking teams. I'm eager to apply my technical expertise to real-world challenges and grow as a well-rounded technology professional in today’s ever-evolving industry.
+              With hands-on experience in building scalable solutions and a strong drive to continuously learn and adapt, I aim to contribute meaningfully to forward-thinking teams. I'm eager to apply my technical expertise to real-world challenges and grow as a well-rounded technology professional in today’s ever-evolving industry.
             </p>
             <div className="flex flex-wrap gap-3">
               {['MEAN', 'MERN', 'JAVA', 'CYBERSECURITY'].map((tech, index) => (
@@ -73,7 +114,24 @@ With hands-on experience in building scalable solutions and a strong drive to co
             </div>
           </div>
 
-          {/* Skills */}
+          <div className={`mt-10 transition-all duration-1000 delay-400 ${
+            isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-10'
+          }`}>
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Education</h3>
+            <ul className="space-y-4 text-gray-700">
+              <li>
+                <strong>Mepco Schlenk Engineering College, Sivakasi</strong><br />
+                Bachelor of Engineering in Computer Science (Honours - Cyber Security)<br />
+                CGPA: 8.55
+              </li>
+              <li>
+                <strong>St. Joseph’s Girls Higher Secondary School, Dindigul</strong><br />
+                HSC: 95.6%<br />
+                SSLC: 94.33%
+              </li>
+            </ul>
+          </div>
+
           <div className={`transition-all duration-1000 delay-500 ${
             isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
           }`}>
@@ -99,6 +157,57 @@ With hands-on experience in building scalable solutions and a strong drive to co
           </div>
         </div>
       </div>
+
+      {/* Certificates Section */}
+      <section id="certificates" className="py-20 bg-gray-100">
+        <div className="max-w-6xl mx-auto px-4 text-center">
+          <h2 className="text-4xl font-bold mb-8 text-gray-800">Certificates</h2>
+
+          <div className="flex justify-center mb-6 space-x-4">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setActiveCategory(category)}
+                className={`px-4 py-2 rounded-full font-medium ${
+                  activeCategory === category
+                    ? 'bg-blue-600 text-white'
+                    : 'bg-white text-gray-800 border'
+                } transition-all duration-300`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {certificates[activeCategory].map((cert, idx) => (
+              <Card key={idx} className="shadow-lg">
+                <CardHeader>
+                  <CardTitle className="text-lg">{cert.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  {cert.image.endsWith('.pdf') ? (
+                    <a
+                      href={cert.image}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block w-full h-48 bg-gray-200 rounded-lg flex items-center justify-center text-blue-600 hover:underline"
+                    >
+                      View PDF
+                    </a>
+                  ) : (
+                    <img
+                      src={cert.image}
+                      alt={cert.title}
+                      className="w-full h-48 object-contain rounded-lg"
+                    />
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
     </section>
   );
 };

@@ -25,54 +25,40 @@ const ProjectsSection = () => {
   }, []);
 
   const projects = [
-    {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment processing, and admin dashboard.',
-      image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=500&h=300&fit=crop',
-      tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
-      github: 'https://github.com',
-      live: 'https://example.com'
-    },
+   
     {
       title: 'Finance Management platform',
       description: 'A collaborative Finance Management platform with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: 'public/image.png',
+      image: '../public/image.png',
       tech: ['Angular', 'TypeScript', 'MongoDB', 'Node.Js'],
       github: 'https://github.com/SHREEMATHI-SRIDAR/FinanceManagement',
       live: 'https://example.com'
     },
-    {
-      title: 'AI-Powered Analytics Dashboard',
-      description: 'An intelligent analytics dashboard that uses machine learning to provide business insights and predictive analytics.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop',
-      tech: ['Python', 'TensorFlow', 'React', 'D3.js'],
-      github: 'https://github.com',
+     {
+      title: 'Railway Ticket Vending System',
+      description: 'A console-based Railway Ticket Vending System that allows admins to manage train schedules and passengers to book, cancel, or modify e-tickets.It simulates core ticketing operations with a user-friendly, menu-driven interface.',
+      image: '../public/ooad.png',
+      tech: ['Mysql','Java'],
+      github: 'https://github.com/SHREEMATHI-SRIDAR/RailwayTicketVendingSystem',
       live: 'https://example.com'
     },
     {
-      title: 'Mobile Finance App',
-      description: 'A secure mobile application for personal finance management with budgeting tools, expense tracking, and financial goal setting.',
+      title: 'Theme Park Management System ',
+      description: 'A Java AWT-based Theme Park Management System that enables customers to book ride tickets and allows admins to manage rides and system operations through a graphical interface',
+      image: '../public/theme.png',
+      tech: ['JavaAwt', 'MySql'],
+      github: 'https://github.com/SHREEMATHI-SRIDAR/ThemePark-Management/tree/main/src/themepark',
+      live: 'https://example.com'
+    },
+    {
+      title: 'Spotify Database Management ',
+      description: 'A Spotify Database Management System built with Java and Oracle Database, allowing users to search and listen to music while admins manage the overall system.',
       image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&h=300&fit=crop',
-      tech: ['React Native', 'Firebase', 'Redux', 'Chart.js'],
+      tech: ['Oracle Database','Java'],
       github: 'https://github.com',
       live: 'https://example.com'
     },
-    {
-      title: 'Social Media Dashboard',
-      description: 'A comprehensive social media management tool that allows users to schedule posts, analyze engagement, and manage multiple accounts.',
-      image: 'https://images.unsplash.com/photo-1611605698335-8b1569810432?w=500&h=300&fit=crop',
-      tech: ['Vue.js', 'Laravel', 'MySQL', 'Redis'],
-      github: 'https://github.com',
-      live: 'https://example.com'
-    },
-    {
-      title: 'Real Estate Platform',
-      description: 'A modern real estate platform with property listings, virtual tours, mortgage calculators, and agent management system.',
-      image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=500&h=300&fit=crop',
-      tech: ['Next.js', 'Prisma', 'PostgreSQL', 'AWS'],
-      github: 'https://github.com',
-      live: 'https://example.com'
-    }
+    
   ];
 
   return (

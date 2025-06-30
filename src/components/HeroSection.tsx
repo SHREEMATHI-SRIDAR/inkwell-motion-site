@@ -32,7 +32,7 @@ const HeroSection = () => {
           </h1>
           
           <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-2xl mx-auto">
-            Full Stack Developer & Creative Problem Solver
+            Computer Science Engineering Student
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
