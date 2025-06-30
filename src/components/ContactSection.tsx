@@ -58,14 +58,14 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: 'Email',
-      content: 'tsridar4_bcs26@mepcoeng.ac.in',
-      link: 'mailto:your.email@example.com'
+      content: 'sridarshreemathi04@gmail.com',
+      link: 'mailto:sridarshreemathi04@gmail.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      content: '+1 (555) 123-4567',
-      link: 'tel:+15551234567'
+      content: '+91 9543471550',
+      link: 'tel:+919543471550'
     },
     {
       icon: MapPin,

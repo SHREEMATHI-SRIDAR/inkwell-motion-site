@@ -36,15 +36,15 @@ const AboutSection = () => {
     NPTEL: [
       {
         title: 'Data Mining',
-        image: '../public/certificates/Data Mining.pdf',
+        image: '/certificates/Data Mining.pdf',
       },
       {
         title: 'Google Cloud Computing Foundations',
-        image: '../public/certificates/Google Cloud Computing Foundations.pdf',
+        image: '/certificates/Google Cloud Computing Foundations.pdf',
       },
       {
         title: 'Social Network Analysis',
-        image: '../public/certificates/Social Network Analysis.pdf',
+        image: '/certificates/Social Network Analysis.pdf',
       },
     ],
     Workshops: [
@@ -52,15 +52,12 @@ const AboutSection = () => {
         title: 'AI Intensified Scientific Accelerated Computing',
         image: '/certificates/5-DAY WORKSHOP.png',
       },
-      {
-        title: 'Cloud Computing Symposium',
-        image: '/certificates/symposium-cloud.png',
-      },
+     
     ],
     International_Certification: [
       {
         title: 'Java Certified Foundations Associate',
-        image: '../public/certificates/Oracle certification.pdf',
+        image: '/certificates/Oracle certification.pdf',
       },
     ],
     Others: [

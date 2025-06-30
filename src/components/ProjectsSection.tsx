@@ -29,26 +29,26 @@ const ProjectsSection = () => {
     {
       title: 'Finance Management platform',
       description: 'A collaborative Finance Management platform with real-time updates, drag-and-drop functionality, and team collaboration features.',
-      image: '../public/image.png',
+      image: '/image.png',
       tech: ['Angular', 'TypeScript', 'MongoDB', 'Node.Js'],
       github: 'https://github.com/SHREEMATHI-SRIDAR/FinanceManagement',
-      live: 'https://example.com'
+      
     },
      {
       title: 'Railway Ticket Vending System',
       description: 'A console-based Railway Ticket Vending System that allows admins to manage train schedules and passengers to book, cancel, or modify e-tickets.It simulates core ticketing operations with a user-friendly, menu-driven interface.',
-      image: '../public/ooad.png',
+      image: '/ooad.png',
       tech: ['Mysql','Java'],
       github: 'https://github.com/SHREEMATHI-SRIDAR/RailwayTicketVendingSystem',
-      live: 'https://example.com'
+    
     },
     {
       title: 'Theme Park Management System ',
       description: 'A Java AWT-based Theme Park Management System that enables customers to book ride tickets and allows admins to manage rides and system operations through a graphical interface',
-      image: '../public/theme.png',
+      image: '/theme.png',
       tech: ['JavaAwt', 'MySql'],
       github: 'https://github.com/SHREEMATHI-SRIDAR/ThemePark-Management/tree/main/src/themepark',
-      live: 'https://example.com'
+      
     },
     {
       title: 'Spotify Database Management ',
@@ -56,7 +56,7 @@ const ProjectsSection = () => {
       image: 'https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=500&h=300&fit=crop',
       tech: ['Oracle Database','Java'],
       github: 'https://github.com',
-      live: 'https://example.com'
+     
     },
     
   ];
@@ -104,14 +104,7 @@ const ProjectsSection = () => {
                     >
                       <Github size={20} />
                     </a>
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-white/30 transition-colors"
-                    >
-                      <Mail size={20} />
-                    </a>
+                    
                   </div>
                 </div>
               </div>
