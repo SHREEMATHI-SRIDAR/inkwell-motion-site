@@ -119,7 +119,7 @@ const AboutSection = () => {
               <li>
                 <strong>Mepco Schlenk Engineering College, Sivakasi</strong><br />
                 Bachelor of Engineering in Computer Science (Honours - Cyber Security)<br />
-                CGPA: 8.55
+                CGPA: 8.49
               </li>
               <li>
                 <strong>St. Joseph’s Girls Higher Secondary School, Dindigul</strong><br />
